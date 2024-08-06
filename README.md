@@ -3,5 +3,6 @@
 
 ## 설치 방법
 ```
-$ pip install git+
+$ pip install git+git@github.com:test-Esther/transform.git
 ```
+
