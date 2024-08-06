@@ -20,7 +20,7 @@ def merge(load_dt):
 
     # 매출액을 기준으로 상위 10개 영화 추출
     df_filtered['salesAmt'] = pd.to_numeric(df_filtered['salesAmt'], errors='coerce')  # 매출액을 숫자형으로 변환
-    df_top10 = df_filtered.sort_values(by='salesAmt', ascending=False).head(10)i
+    df_top10 = df_filtered.sort_values(by='salesAmt', ascending=False).head(10)
 
     # 한국 영화만 필터링
     df_korean_movies = df_top10[df_top10['repNationCd'] == 'K']  # 'K'은 한국 영화
