@@ -1,7 +1,7 @@
 import pandas as pd
 
 def merge(load_dt='20160101'):
-    read_df=pd.read_parquet('~/tmp/team_parquet2')
+    read_df=pd.read_parquet('~/tmp/team_parquet')
     cols=['movieNm',
         'salesAmt',
         'openDt'
