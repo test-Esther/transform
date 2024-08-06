@@ -12,8 +12,7 @@ def merge(load_dt='20160101'):
     df['salesAmt']=df['salesAmt'].astype('object')
     df['openDt']=df['openDt'].astype('object')
 
-    print(df)
-    
+    df.to_parquet('~/tmp/test_parquet_transform', partition_cols=['load_dt'])
     
 
 
