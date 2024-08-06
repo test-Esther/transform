@@ -5,7 +5,8 @@ def merge(load_dt="20160101"):
     cols = [
        'movieNm', #영화명(국문)을 출력합니다.
         'openDt', #영화의 개봉일을 출력합니다.
-        'salesAmt'
+        'salesAmt',
+        'load_dt'
        ]
     df = read_df[cols]
     # 울버린만 조회
@@ -17,7 +18,7 @@ def merge(load_dt="20160101"):
     df['movieNm'] = df['movieNm'].astype('object')
     df['openDt'] = df['openDt'].astype('object')
     df['salesAmt'] = df['salesAmt'].astype('object')
-
+    df['load_dt'] = df['load_dt'].astype('object')
     print(df)
 
 merge()
