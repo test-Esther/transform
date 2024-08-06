@@ -6,7 +6,9 @@ authors = [
     {name = "Nicou11", email = "lyoungin1204@gmail.com"},
 ]
 dependencies = [
+
     "pandas>=2.2.2",
+
     "pyarrow>=17.0.0",
     "fastparquet>=2024.5.0",
 ]
